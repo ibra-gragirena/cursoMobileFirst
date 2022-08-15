@@ -144,3 +144,91 @@ main {
     line-height: 1.8rem;
     color: #757575;
 }
+
+/* Tabla */
+.main-table-container {
+    width: 100%;
+    height: auto;
+    padding: 48px 23px 62px 65px ;
+    margin: 0;
+    text-align: start;
+
+
+}
+
+.main-table-container h3 {
+    margin-left: 12px;
+    margin-bottom: 12px;
+    font-size: 1.8rem;
+    font-weight: bold ;
+    line-height: 2.4rem;
+    color: #FF9536;
+}
+.main-table-container .main-table--grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    width: 90%;
+    height: auto;
+    margin-bottom: 16px;
+    font-family: 'Inter'; 
+    background-color: var(--white);
+    border-radius: 8px;
+
+}
+.main-table-container .main-table--grid--item {
+    padding: 10px 12px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: #B5B0AC;
+    border-right: 1px solid var(--off-white);
+    border-bottom: 1px solid var(--off-white);
+
+}
+.main-table-container .main-table--grid--price {
+    padding: 12px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.7rem;
+    color: #757575;
+    border-right: 1px solid var(--off-white);
+    border-bottom: 1px solid var(--off-white);
+}
+/* Trending img */
+.main-table-container .main-table--grid--price .trendingUpImg {
+    display: inline-block;
+    width: 14px;
+    height: 12px;
+    margin-left: 11px ;
+    background-image: url('./assets/icons/trending-up.svg');
+    background-repeat: no-repeat;
+}
+.main-table--grid--price .trendingDownImg {
+    display: inline-block;
+    width: 12px;
+    height: 10px;
+    margin-left: 11px;
+    background-image: url('./assets/icons/trending-down.svg');
+    background-repeat: no-repeat;
+}
+/* Update */
+
+.main-table-container .main-table-container--update {
+    width: 80%;
+    margin-left: 12px;
+    padding: 8px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    align-self: center;
+    color: var(--warm-black);
+    background-color: var(--soft-orange);
+    border-radius: 8px;
+}
+.main-table-container .main-table-container--update span {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #282623;
+
+}
+
