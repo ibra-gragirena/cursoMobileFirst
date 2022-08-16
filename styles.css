@@ -150,24 +150,40 @@ main {
     width: 100%;
     height: auto;
     padding: 48px 23px 62px 65px ;
-    margin: 0;
+    margin: 0 auto;
     text-align: start;
 
 
 }
-
-.main-table-container h3 {
+.main-table--currency , .main-table--commission {
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: 0 auto;
+}
+.main-table-container .main-table--currency h3 {
     margin-left: 12px;
     margin-bottom: 12px;
     font-size: 1.8rem;
     font-weight: bold ;
     line-height: 2.4rem;
-    color: #FF9536;
+    color: var(--bitcoin-orange);
 }
-.main-table-container .main-table--grid{
+.main-table--commission h3 {
+    margin-left: 12px;
+    margin-bottom: 12px;
+    font-size: 1.8rem;
+    font-weight: bold ;
+    line-height: 2.4rem;
+    color: var(--secondary-blue)
+} 
+
+.main-table--currency , .main-table--commission .main-table--grid{
+    width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr ;
-    width: 90%;
+    min-width: 200px;
+    max-width: 300px;
     height: auto;
     margin-bottom: 16px;
     font-family: 'Inter'; 
@@ -175,7 +191,8 @@ main {
     border-radius: 8px;
 
 }
-.main-table-container .main-table--grid--item {
+.main-table--item {
+
     padding: 10px 12px;
     font-size: 1.6rem;
     font-weight: 500;
@@ -185,50 +202,86 @@ main {
     border-bottom: 1px solid var(--off-white);
 
 }
-.main-table-container .main-table--grid--price {
+.main-table--price {
     padding: 12px;
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.7rem;
+    text-align: center;
     color: #757575;
     border-right: 1px solid var(--off-white);
     border-bottom: 1px solid var(--off-white);
 }
 /* Trending img */
-.main-table-container .main-table--grid--price .trendingUpImg {
+.main-table-container .main-table--price .trendingUpImg {
     display: inline-block;
     width: 14px;
     height: 12px;
     margin-left: 11px ;
     background-image: url('./assets/icons/trending-up.svg');
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
-.main-table--grid--price .trendingDownImg {
+.main-table--price .trendingDownImg {
     display: inline-block;
     width: 12px;
     height: 10px;
     margin-left: 11px;
     background-image: url('./assets/icons/trending-down.svg');
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 /* Update */
 
 .main-table-container .main-table-container--update {
-    width: 80%;
-    margin-left: 12px;
+    width: 173px;
+    height: 30px;
+    margin-left: 12px;    
     padding: 8px;
-    font-size: 1.4rem;
-    font-weight: 700;
-    line-height: 1.5rem;
-    align-self: center;
-    color: var(--warm-black);
     background-color: var(--soft-orange);
     border-radius: 8px;
 }
-.main-table-container .main-table-container--update span {
+.main-table-container .main-table-commission--update {
+    width: 173px;
+    height: 30px;
+    margin-left: 12px;    
+    padding: 8px;
+    background-color: var(--soft-blue);
+    border-radius: 8px;
+}
+.main-table-container--update ,.main-table-commission--update p{
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    color: var(--warm-black);
+
+}
+
+.main-table-container--update , .main-table-commission--update span {
     font-size: 1.3rem;
     font-weight: 400;
     color: #282623;
 
+}
+.arrowScroll-Left {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 146px;
+    left: -50px;
+    background-image: url('./assets/icons/right-arrow.svg') ;
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+}
+.arrowScroll-Right {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 134px;
+    left: 220px;
+    background-image: url('./assets/icons/right-arrow.svg') ;
+    background-repeat: no-repeat;
 }
 
