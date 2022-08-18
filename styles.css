@@ -98,6 +98,8 @@ header img {
     height: 8px;
     margin: 6px 0 0 14px  ;
     background-image: url('./assets/icons/down-arrow.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* Main exchange container */
@@ -442,16 +444,33 @@ main {
 }
 /* Slider */
 .plans-container--slider {
+    display: flex;
     width: 100%;
     height: auto;
+    padding: 16px;
+    overflow-x: scroll; 
+    scroll-snap-type: x proximity; 
 }
+.plans-container--slider::-webkit-scrollbar{
+    height: 10px;
+}
+.plans-container--slider::-webkit-scrollbar-track{
+    background: #f3e3d0;
+
+}
+.plans-container--slider::-webkit-scrollbar-thumb {
+    background: #fcce94;
+    border-radius: 20px;
+}
+
+
 .plans-container--card {
     position: relative;
     width: 70%;
-    min-width: 230px;
-    max-width: 300px;
+    min-width: 190px;
+    max-width: 230px;
     height: 250px;
-    margin: 0 auto ;
+    margin: 0 8px;
     padding: 0 15px;
     background-color: var(--white);
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
@@ -480,5 +499,48 @@ main {
     line-height: 1.8rem;
     color: #000000;
 }
+.plan-card--price {
+    position: relative;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 6.3rem;
+    color: #000000 ;
+}
+.plan-card--price span {
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 46px);
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+.plan-card--saving {
+    padding: 16px 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: #757575;
+}
+.plan-card--ca {
+    width: 150px;
+    height: 48px;
+    color:var(--warm-black);
+    background-color: var(--off-white);
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    font-family: 'Dm Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+}
+.plan-card--ca span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(./assets/icons/orange-right-arrow.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: text-bottom;
+} 
 
 
