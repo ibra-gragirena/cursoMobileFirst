@@ -402,11 +402,83 @@ main {
     height: auto;
 }
 .hero-title-container h2 {
+    padding-top: 64px;
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2.6rem;
-    padding-top: 64px;
     text-align: center;
     color: var(--white);
 }
+
+/* Plans section */
+
+.main-plans-container {
+    width: 100%;
+    height: auto;
+    min-width: 320px;
+    padding-bottom: 64px;
+    text-align: center;
+}
+.plans--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+}
+.plans--title h2 {
+    padding-top: 64px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--warm-black);
+
+}
+.plans--title p {
+    padding: 24px 0 50px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
+/* Slider */
+.plans-container--slider {
+    width: 100%;
+    height: auto;
+}
+.plans-container--card {
+    position: relative;
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto ;
+    padding: 0 15px;
+    background-color: var(--white);
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border-radius: 8px; 
+    font-family: 'Inter' ,sans-serif;
+
+}
+.recommended {
+    position: absolute;
+    width: 100px;
+    height: 31px;
+    padding: 8px;
+    top: -15px;
+    left: calc(50% - 50px);
+    border-radius: 8px;
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+    background-color: var(--bitcoin-orange);
+}
+.plan-card--title {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #000000;
+}
+
 
