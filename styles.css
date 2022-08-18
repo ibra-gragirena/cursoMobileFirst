@@ -149,21 +149,33 @@ main {
 
 /* Tabla */
 .main-table-container {
+    display: flex;
     width: 100%;
     height: auto;
-    padding: 48px 23px 62px 65px ;
+    padding: 48px 48px  ;
     margin: 0 auto;
     text-align: start;
+    overflow-x: scroll; 
+    scroll-snap-type: x proximity; 
+}
+.main-table-container::-webkit-scrollbar{
+    height: 10px;
+}
+.main-table-container::-webkit-scrollbar-track{
+    background: #f3e3d0;
 
-
+}
+.main-table-container::-webkit-scrollbar-thumb {
+    background: #fcce94;
+    border-radius: 20px;
 }
 .main-table--currency , .main-table--commission {
     min-width: 235px;
     max-width: 500px;
-    height: 360px;
+    height: auto;
     margin: 0 auto;
 }
-.main-table-container .main-table--currency h3 {
+.main-table--currency h3 {
     margin-left: 12px;
     margin-bottom: 12px;
     font-size: 1.8rem;
@@ -180,7 +192,7 @@ main {
     color: var(--secondary-blue)
 } 
 
-.main-table--currency , .main-table--commission .main-table--grid{
+.main-table--grid{
     width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr ;
@@ -194,7 +206,6 @@ main {
 
 }
 .main-table--item {
-
     padding: 10px 12px;
     font-size: 1.6rem;
     font-weight: 500;
@@ -253,7 +264,7 @@ main {
     background-color: var(--soft-blue);
     border-radius: 8px;
 }
-.main-table-container--update ,.main-table-commission--update p{
+.main-table-container--update p, .main-table-commission--update p{
     font-size: 1.2rem;
     font-weight: 700;
     line-height: 1.5rem;
@@ -266,25 +277,6 @@ main {
     font-weight: 400;
     color: #282623;
 
-}
-.arrowScroll-Left {
-    position: relative;
-    width: 20px;
-    height: 20px;
-    top: 146px;
-    left: -50px;
-    background-image: url('./assets/icons/right-arrow.svg') ;
-    transform: rotate(180deg);
-    background-repeat: no-repeat;
-}
-.arrowScroll-Right {
-    position: relative;
-    width: 20px;
-    height: 20px;
-    top: 134px;
-    left: 220px;
-    background-image: url('./assets/icons/right-arrow.svg') ;
-    background-repeat: no-repeat;
 }
 .main-product-detail {
     position: relative;
@@ -570,5 +562,6 @@ footer .left ul {
     color: var(--white);
 
 }
+
 
 
