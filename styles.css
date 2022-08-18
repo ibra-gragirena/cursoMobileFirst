@@ -448,8 +448,10 @@ main {
     width: 100%;
     height: auto;
     padding: 16px;
+    gap: 8px;
     overflow-x: scroll; 
     scroll-snap-type: x proximity; 
+    
 }
 .plans-container--slider::-webkit-scrollbar{
     height: 10px;
@@ -470,7 +472,6 @@ main {
     min-width: 190px;
     max-width: 230px;
     height: 250px;
-    margin: 0 8px;
     padding: 0 15px;
     background-color: var(--white);
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
@@ -542,5 +543,32 @@ main {
     background-repeat: no-repeat;
     vertical-align: text-bottom;
 } 
+/* Footer */
+footer {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+footer section {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+footer .left ul {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style-type: none;
+}
+.left li {
+    padding: 4px;
+}
+.left a {
+    text-decoration: none;
+    color: var(--white);
+
+}
 
 
