@@ -5,3 +5,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+.hero-image-container{
+    background-image: url('../assets/img/bitcoinbaby2x.png');
+
+}
